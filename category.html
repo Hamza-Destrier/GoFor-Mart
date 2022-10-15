@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./mediaquery.css" />
+  <link rel="shortcut icon" href="./Images/logos/Favicon.png" type="image/x-icon">
+  <title>GoFor Mart</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navtop">
+
+    <div class="navtop-wrapper-left">
+      <div class="contact-address__email">
+        <i class="bi bi-envelope-fill"></i>
+        <div>
+          <a href="mailto:info@goformartllc.com"> info@goformartllc.com </a>
+        </div>
+      </div>
+
+      <div class="contact-address__contact">
+        <i class="bi bi-telephone-fill"></i>
+        <div>
+          <a href="tel:+13342184280">+1 (334) 218-4280</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-address__address">
+      <i class="bi bi-house-fill"></i>
+      <div>
+        7901 4th St. N STE 11056 St. Petersburg, FL 33702
+      </div>
+    </div>
+
+  </header>
+
+  <nav id="navbar" class="navbar">
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./Images/logos/white-horizontal.svg" alt="">
+      </a>
+    </div>
+    <div class="nav-items" id="navLinks">
+      <div class="cross"><i class="bi bi-x-lg" onclick="hideMenu()"></i></div>
+      <div class="nav-links">
+        <a class="links" href="./index.html"><i class="bi bi-house-fill"></i>&nbsp;&nbsp;Home</a>
+        <a class="links dropDownMenu active"><i class="bi bi-box-fill"></i>&nbsp;&nbsp;Category
+          <div class="dropDown"></div>
+        </a>
+
+        <a id="saleMenuNavItem" class="links flip" href="./category.html?cat=sale">
+          <i class="bi bi-tags-fill"></i>
+          &nbsp;&nbsp;Sale
+        </a>
+
+        <a id="wishlistMenuNavItem" class="links flip" href="./category.html?cat=wishlist">
+          <i class="bi bi-bag-heart-fill"></i>
+          &nbsp;&nbsp;Wishlist
+        </a>
+
+        <a class="links cartNavItem" href="./cart.html">
+          <span id="cartCounterNavItemID"></span>
+          <span><i class="bi bi-cart-fill"></i>&nbsp;&nbsp;Cart</span>
+        </a>
+        <a class="links" href="./contact-us.html"><i class="bi bi-person-fill"></i>&nbsp;&nbsp;Contact Us</a>
+      </div>
+    </div>
+    <div class="toggleNavbar">
+      <i class="bi bi-list" onclick="showMenu()"></i>
+    </div>
+  </nav>
+
+  <!-- Navbar -->
+
+  <!-- Category Page -->
+  <section class="category">
+    <div class="header">
+      <h1><span id="catHeading"></span></h1>
+
+    </div>
+
+    <div id="catCardsContainer"></div>
+  </section>
+
+  <!-- Category Page -->
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-top">
+
+      <div class="first-half">
+        <div class="logo">
+          <img src="./Images/logos/white-horizontal.svg" alt="">
+        </div>
+
+        <p>We provide a trackable and reliable delivery service, currently shipping within, the USA. We handle all
+          duties regarding processing shipments, to ensure you are worry-free from any hidden fees. You can also enjoy
+          our 14 Days Return Policy and 12 months in house warranty on major items.
+        </p>
+
+        <div class="contact-address">
+          <div class="contact-address-wrapper">
+
+            <div class="contact-address__address">
+              <div>Address</div>
+              <div>
+                7901 4th St. N STE 11056 <br />St. Petersburg, FL 33702
+              </div>
+            </div>
+
+            <div class="contact-address__contact">
+              <div>Phone</div>
+              <div>
+                <a href="tel:+13342184280">+1 (334) 218-4280</a>
+              </div>
+            </div>
+
+            <div class="contact-address__email">
+              <div>email</div>
+              <div>
+                <a href="mailto:info@goformartllc.com"> info@goformartllc.com </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="social-media">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-pinterest"></i>
+        </div>
+      </div>
+
+      <div class="footer-filler"></div>
+
+      <div class="second-half">
+        <div class="categoryFooter">
+          <h5>Products</h5>
+          <div id="dropDownCategory"></div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <p class="payment-method">We accept the following secure payment methods:</p>
+    <div class="paymentDetails">
+      <div class="paypal">
+        <i class="bi bi-paypal"></i>
+        <p>PayPal</p>
+      </div>
+      <div class="visa">
+        <img src="./Images/logos/visa.png" alt="">
+        <p>Visa</p>
+      </div>
+      <div class="master">
+        <img src="./Images/logos/mastercard.png" alt="">
+        <p>Master Card</p>
+      </div>
+      <div class="stripe">
+        <img src="./Images/logos/stripe.png" alt="">
+        <p>Stripe</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy;All right reserved GoFor Mart Limited 2022</p>
+    </div>
+
+    <p class="credits-heading">Home Page Images Credits.</p>
+    <div class="credits">
+      <a target="_blank"
+        href="https://unsplash.com/photos/FO7JIlwjOtU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Alexandre Debieve</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/vA1L1jRTM70?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Calum Lewis</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/lJJlaUWYrPE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Charles Deluvio</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/8cxJzVpGKk8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Dan Cristian Padure</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/I7iJOE4fsYo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Haupes</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/yo01Z-9HQAw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Hush Naidoo Jade</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/dZYI4ga2eUA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Isaac Quesada</a>
+      <a target="_blank" href="
+    https://unsplash.com/photos/FoeIOgztCXo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Jazmin Quaynor</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/YpNf6ATniQA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Nick Nice</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/ixS7UCRJTdM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by No Revisions</a>
+      <a target="_blank"
+        href="https://unsplash.com/photos/wunVFNvqhfE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo
+        by Sabri Tuzcu Wun</a>
+      <a target="_blank" href="https://www.pexels.com/photo/green-grass-413195/">Photo by pixmike</a>
+      <a target="_blank" href="https://www.pexels.com/photo/rock-formation-close-up-photography-2646237/">Photo by
+        Dexter Fernandes</a>
+      <a target="_blank" href="https://www.pexels.com/photo/red-white-and-brown-gift-boxes-1303081/">Photo by George
+        Dolgikh</a>
+      <a target="_blank" href="https://www.pexels.com/photo/two-paper-tote-bags-1666067/">Photo by George Dolgikh</a>
+    </div>
+
+  </footer>
+
+  <!-- Footer -->
+
+  <!-- JS -->
+
+  <script src="./db.js"></script>
+  <script src="./helpers.js"></script>
+  <script src="./markupHelpers.js"></script>
+  <script src="./categoryScript.js"></script>
+
+  <!-- JS -->
+</body>
+
+</html>
